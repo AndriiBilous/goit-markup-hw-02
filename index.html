@@ -5,51 +5,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
   </head>
-  <body>
-    <header>
-      <nav>
-        <a href="./index.html">WebStudio</a>
-        <ul>
-          <li><a href="#">Студія</a></li>
-          <li><a href="/portfolio.html">Портфоліо</a></li>
-          <li><a href="#">Контакти</a></li>
+  <body class="body">
+    <header class="header">
+      <nav class="header-navigation">
+        <a class="header-logo link" href="./index.html">
+          <span class="span-web link">Web</span
+          ><span class="span-studio">Studio</span>
+        </a>
+        <ul class="header-list list">
+          <li class="header-item">
+            <a class="header-list link" href="./index.html">Студія</a>
+          </li>
+          <li class="header-item">
+            <a class="header-list link" href="/portfolio.html">Портфоліо</a>
+          </li>
+          <li class="header-item">
+            <a class="header-list link" href="#">Контакти</a>
+          </li>
         </ul>
       </nav>
-      <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+      <ul class="contacts list">
+        <li class="header-item">
+          <a class="header-list link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li class="header-item">
+          <a class="header-tel link" href="tel:+380961111111"
+            >+38 096 111 11 11</a
+          >
+        </li>
       </ul>
     </header>
     <main>
-      <section>
-        <h1>Ефективні рішення для вашого бізнесу</h1>
-        <button type="button">Замовити послугу</button>
+      <section class="hero">
+        <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+        <button class="hero-btn" type="button">Замовити послугу</button>
       </section>
-      <section>
+      <section class="sectinon-tex">
         <h2 hidden>Наша особливість</h2>
         <ul>
-          <li>
+          <li class="details list">
             <h3>Увага до деталей</h3>
             <p>
               Ідейні міркування, і навіть початок повсякденної роботи з
               формування позиції.
             </p>
           </li>
-          <li>
+          <li class="punctuality list">
             <h3>Пунктуальність</h3>
             <p>
               Завдання організації, особливо рамки і місце навчання кадрів тягне
               у себе.
             </p>
           </li>
-          <li>
+          <li class="planning list">
             <h3>Планування</h3>
             <p>
               Так само консультація з широким активом значною мірою зумовлює.
             </p>
           </li>
-          <li>
+          <li class="technologies list">
             <h3>Сучасні технології</h3>
             <p>
               Значимість цих проблем настільки очевидна, що реалізація планових
@@ -58,10 +88,10 @@
           </li>
         </ul>
       </section>
-      <section>
-        <h2>Чим ми займаємося</h2>
+      <section class="section-do">
+        <h2 class="image-tex">Чим ми займаємося</h2>
         <ul>
-          <li>
+          <li class="computer list">
             <img
               src="./images/img.jpg"
               alt="computer"
@@ -69,10 +99,10 @@
               height="294"
             />
           </li>
-          <li>
+          <li class="phone list">
             <img src="./images/img2.jpg" alt="phone" width="270" height="294" />
           </li>
-          <li>
+          <li class="tablet list">
             <img
               src="./images/img3.jpg"
               alt="tablet"
@@ -82,66 +112,75 @@
           </li>
         </ul>
       </section>
-      <section>
-        <h2>Наша команда</h2>
+      <section class="our-team">
+        <h2 class="team list">Наша команда</h2>
         <ul>
-          <li>
+          <li class="team-image list">
             <img
               src="./images/img4.jpg"
-              alt="Product Designer"
+              alt="product designer"
               width="270"
               height="260"
             />
-            <h3>Ігор Дем'яненко</h3>
-            <p>Product Designer</p>
+            <h3 class="name-product-designer">Ігор Дем'яненко</h3>
+            <p class="profession-product">Product Designer</p>
           </li>
-          <li>
+          <li class="team-image list">
             <img
               src="./images/img5.jpg"
-              alt="Frontend Developer"
+              alt="frontend developer"
               width="270"
               height="260"
             />
-            <h3>Ольга Рєпіна</h3>
-            <p>Frontend Developer</p>
+            <h3 class="name-developer">Ольга Рєпіна</h3>
+            <p class="profession-developer">Frontend Developer</p>
           </li>
-          <li>
+          <li class="team-image list">
             <img
               src="./images/img6.jpg"
-              alt="Marketing"
+              alt="marketing"
               width="270"
               height="260"
             />
-            <h3>Микола Тарасов</h3>
-            <p>Marketing</p>
+            <h3 class="name-marketing">Микола Тарасов</h3>
+            <p class="profession-marketing">Marketing</p>
           </li>
-          <li>
+          <li class="team-image list">
             <img
               src="./images/img7.jpg"
-              alt="UI Designer"
+              alt="ui designer"
               width="270"
               height="260"
             />
-            <h3>Михайло Єрмаков</h3>
-            <p>UI Designer</p>
+            <h3 class="name-designer">Михайло Єрмаков</h3>
+            <p class="profession-designer">UI Designer</p>
           </li>
         </ul>
       </section>
     </main>
-    <footer>
-      <a href="./index.htm">WebStudio</a>
+    <footer class="footer-site">
+      <a class="header-logo link" href="./index.html">
+        <span class="span-web">Web</span><span class="span-studio">Studio</span>
+      </a>
       <address>
-        <ul>
+        <ul class="contacts list">
           <li>
             <a
+              class="link-map link"
               href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
               target="_blank"
               rel="noopener noreferrer nofollow"
               >м. Київ, пр-т Лесі Українки, 26</a
             >
           </li>
-          <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+          <li>
+            <a class="header-list link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a class="header-tel link" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
         </ul>
       </address>
     </footer>
