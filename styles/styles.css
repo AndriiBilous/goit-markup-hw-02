@@ -1,54 +1,76 @@
-/* body */
+/* -------body------- */
 
-.body {
+body {
   font-family: "Roboto", sans-serif;
-  background: #ffffff;
+  background-color: var(--bac-tex-color);
+  color: var(--header-list-color);
 }
 
 .list {
   list-style: none;
 }
+
 .link {
   text-decoration: none;
 }
 
-.header {
-  background: #ffffff;
+:root {
+  --header-list-color: #212121;
+  --accent-color: #2196f3;
+  --paragraf-tex-color: #757575;
+  --bac-tex-color: #ffffff;
+  --bac-hero-color: #2f303a;
+  --logo-web-color: #000000;
+  --bac-our-color: #f5f4fa;
+  --focus-btn-color: #188ce8;
+  --footer-linc-color: #ffffff99;
 }
 
-/* -------HWADER------- */
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+/* -------header------- */
+
 .header-logo {
-  font-family: "Raleway";
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  cursor: pointer;
-}
-
-.span-web {
-  color: #2196f3;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
 
-.span-studio {
-  color: #000000;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
+.web {
+  color: var(--accent-color);
 }
-
+.studio {
+  color: var(--logo-web-color);
+}
+.header-list.current {
+  color: var(--accent-color);
+}
 .header-list {
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
-  cursor: pointer;
+  color: var(--header-list-color);
+}
+.header-mail {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--paragraf-tex-color);
 }
 
 .header-tel {
@@ -56,29 +78,26 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575;
-  cursor: pointer;
+  color: var(--paragraf-tex-color);
 }
-.header-list:hover {
-  color: #2196f3;
-}
-
-.header-list:focus {
-  color: #2196f3;
-}
-.link-map:focus {
-  color: #2196f3;
-}
+.web:hover,
+.web:focus,
+.studio:hover,
+.studio:focus,
+.header-list:hover,
+.header-list:focus,
+.header-link:hover,
+.header-link:focus,
+.header-mail:hover,
+.header-mail:focus,
+.header-tel:hover,
 .header-tel:focus {
-  color: #2196f3;
-}
-.header-tel:hover {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
-/* -----SECTION HERO---- */
+/* -------hero------- */
 .hero {
-  background: #2f303a;
+  background-color: var(--bac-hero-color);
 }
 
 .hero-title {
@@ -88,166 +107,183 @@
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--bac-tex-color);
 }
-
 .hero-btn {
-  background: #2196f3;
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.btn {
+  cursor: pointer;
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  /* identical to box height, or 188% */
-  color: #ffffff;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  cursor: pointer;
+  border-color: transparent;
+  letter-spacing: 0.06em;
+  color: var(--bac-tex-color);
 }
-
 .hero-btn:focus {
-  background: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 30px;
-  /* identical to box height, or 188% */
-  color: #ffffff;
+  color: var(--focus-btn-color);
 }
 
-/* -----SECTION-TEX----- */
-.sectinon-tex {
-  background: #f5f5f5;
-}
+/* -------sectinon-tex------- */
 
-.sectinon-tex h3 {
+.section-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #212121;
 }
-
-.sectinon-tex p {
-  font-weight: 400;
+.after-title {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--paragraf-tex-color);
 }
-/* ----section whith image-------- */
 
-.image-tex {
+/* -------section-do------- */
+
+.image-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.16;
+  line-height: 1.67;
+  text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
 }
 
-.section-do {
-  background: #f5f5f5;
-}
-/* ------OUR TEAM------ */
+/* -------our-team------- */
 
 .our-team {
-  background: #f5f4fa;
-}
-.team {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
-  color: #212121;
-}
-.name-product-designer,
-.name-developer,
-.name-marketing,
-.name-designer {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18;
-  /* identical to box height */
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
+  background-color: var(--bac-our-color);
 }
 
-.profession-product,
-.profession-developer,
-.profession-marketing,
-.profession-designer {
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.67;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.name-title {
+  font-weight: 500;
   font-size: 16px;
-  line-height: 1.18;
+  line-height: 1.19;
   /* identical to box height */
   text-align: center;
   letter-spacing: 0.03em;
-  color: #757575;
 }
-/* ---------FOOTER--------- */
-.link-map {
+
+.profession {
+  font-size: 16px;
+  line-height: 1.19;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--paragraf-tex-color);
+}
+
+/* -------footer-site------- */
+.footer-site {
+  background-color: var(--bac-hero-color);
+}
+
+.footer-logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  /* identical to box height */
+  letter-spacing: 0.03em;
+}
+
+.span-studio {
+  color: var(--bac-tex-color);
+}
+
+.contacts-map-linc {
+  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
+  /* or 171% */
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--bac-tex-color);
 }
-.link-map:hover {
-  color: #2196f3;
+
+.footer-mail {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  /* or 171% */
+  letter-spacing: 0.03em;
+  color: var(--footer-linc-color);
 }
-.footer-site {
-  background: #2f303a;
+.footer-tel {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  /* or 171% */
+  letter-spacing: 0.03em;
+  color: var(--footer-linc-color);
 }
-/* -------------portfolio page--------- */
-.btn-oll,
-.btn-sites,
-.btn-appendices,
-.btn-design,
-.btn-marketing {
-  background: #f5f4fa;
+
+.footer-tel:hover,
+.footer-tel:focus,
+.footer-mail:hover,
+.footer-mail:focus,
+.contacts-map-linc:hover,
+.contacts-map-linc:focus,
+.span-studio:hover,
+.span-studio:focus {
+  color: var(--accent-color);
+}
+/* -------portfolio------- */
+
+.filters-btn {
+  background: var(--bac-our-color);
   border-radius: 4px;
-  color: #212121;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.p-btn {
+  font-family: inherit;
+  cursor: pointer;
+  border-color: transparent;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   /* identical to box height, or 162% */
   text-align: center;
   letter-spacing: 0.03em;
-  cursor: pointer;
+  color: var(--header-list-color);
 }
-.btn-oll:hover,
-:focus {
-  color: #2196f3;
+.filters-btn:focus {
+  color: var(--focus-btn-color);
 }
-.btn-sites:hover,
-:focus {
-  color: #2196f3;
+.filters-btn:hover {
+  background-color: var(--accent-color);
 }
-.btn-appendices:hover,
-:focus {
-  color: #2196f3;
-}
-.btn-design:hover,
-:focus {
-  color: #2196f3;
-}
-.btn-marketing:hover,
-:focus {
-  color: #2196f3;
-}
-/* -------OUR WORK-------- */
+/* -------img-list------- */
 
-.our-work h3 {
+.img-item {
+  background-color: var(--bac-tex-color);
+  border: 1px solid #eeeeee;
+}
+
+.title-img {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   /* identical to box height, or 200% */
   letter-spacing: 0.06em;
-  color: #212121;
 }
-.our-work p {
+.img-tex {
   font-size: 16px;
   line-height: 1.88;
   /* identical to box height, or 188% */
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--paragraf-tex-color);
 }
