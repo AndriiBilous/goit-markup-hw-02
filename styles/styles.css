@@ -55,6 +55,10 @@ body {
 .studio {
   color: var(--logo-web-color);
 }
+
+.span-studio {
+  color: var(--bac-tex-color);
+}
 .header-list.current {
   color: var(--accent-color);
 }
@@ -80,10 +84,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--paragraf-tex-color);
 }
-.web:hover,
-.web:focus,
-.studio:hover,
-.studio:focus,
+
 .header-list:hover,
 .header-list:focus,
 .header-link:hover,
@@ -124,8 +125,9 @@ body {
   letter-spacing: 0.06em;
   color: var(--bac-tex-color);
 }
-.hero-btn:focus {
-  color: var(--focus-btn-color);
+.hero-btn:focus,
+.hero-btn:hover {
+  background-color: var(--focus-btn-color);
 }
 
 /* -------sectinon-tex------- */
@@ -158,6 +160,9 @@ body {
 
 .our-team {
   background-color: var(--bac-our-color);
+}
+.team-image {
+  background-color: var(--bac-tex-color);
 }
 
 .team-title {
@@ -200,10 +205,6 @@ body {
   letter-spacing: 0.03em;
 }
 
-.span-studio {
-  color: var(--bac-tex-color);
-}
-
 .contacts-map-linc {
   font-style: normal;
   font-size: 14px;
@@ -235,9 +236,7 @@ body {
 .footer-mail:hover,
 .footer-mail:focus,
 .contacts-map-linc:hover,
-.contacts-map-linc:focus,
-.span-studio:hover,
-.span-studio:focus {
+.contacts-map-linc:focus {
   color: var(--accent-color);
 }
 /* -------portfolio------- */
@@ -260,17 +259,17 @@ body {
   letter-spacing: 0.03em;
   color: var(--header-list-color);
 }
-.filters-btn:focus {
-  color: var(--focus-btn-color);
-}
+
+.filters-btn:focus,
 .filters-btn:hover {
   background-color: var(--accent-color);
+  color: var(--bac-tex-color);
 }
+
 /* -------img-list------- */
 
 .img-item {
   background-color: var(--bac-tex-color);
-  border: 1px solid #eeeeee;
 }
 
 .title-img {
@@ -279,6 +278,7 @@ body {
   line-height: 2;
   /* identical to box height, or 200% */
   letter-spacing: 0.06em;
+  color: var(--header-list-color);
 }
 .img-tex {
   font-size: 16px;
